@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* body bg :) */
+body {
+    background-color: #eee
+}
+
+/* declare font for mui cmp */
+@font-face {
+    font-family: 'vazir';
+    src: url('../public/assets/fonts/vazir.woff') format('.woff'),
+        url('../public/assets/fonts/vazir.woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* remove arow of input type number  */
+input[type="number"] {
+    -moz-appearance: textfield !important;
+    appearance: textfield !important;
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* custom font for toast */
+.Toastify__toast-body {
+    font-family: 'vazir';
+    direction: rtl;
+}
+
+.Toastify__close-button {
+    display: none;
+}
