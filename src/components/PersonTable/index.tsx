@@ -17,7 +17,6 @@ interface PersonTableProps {
 }
 
 const PersonTable: React.FC<PersonTableProps> = ({ data }) => {
-  console.log("data", data);
   return (
     <TableContainer component={Paper}>
       <Table>

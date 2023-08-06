@@ -10,7 +10,6 @@ export default async function handler(
   if (req.method === "POST") {
     const { name, familyName, state, nationalCode, education } = req.body;
     const newData = `${name},${familyName},${nationalCode},${education},${state},${getJalaliDate()}\n`;
-    console.log(newData);
     try {
       const filePath = path.join(process.cwd(), "person.txt");
       fs.appendFileSync(filePath, newData);
